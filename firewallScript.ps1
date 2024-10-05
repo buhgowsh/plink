@@ -30,3 +30,4 @@ Set-SmbServerConfiguration –EnableSMB1Protocol $false
 
 #Download useful stuff
 Start-BitsTransfer -Source "https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U_STIG_GPO_Package_April_2024.zip" -Destination "C:\"
+Start-BitsTransfer -Source "https://download.sysinternals.com/files/SysinternalsSuite.zip" -Destination "C:\"
