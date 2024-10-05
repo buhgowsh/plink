@@ -27,3 +27,6 @@ Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled True
 
 #Disable SMBv1
 Set-SmbServerConfiguration –EnableSMB1Protocol $false
+
+#Download useful stuff
+Start-BitsTransfer -Source "https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U_STIG_GPO_Package_April_2024.zip" -Destination "C:\"
