@@ -24,3 +24,6 @@ New-NetFirewallRule -Name "Block Port 4444" -DisplayName "Block Port 4444" -Dire
 
 #Enable firewall
 Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled True
+
+#Disable SMBv1
+Set-SmbServerConfiguration –EnableSMB1Protocol $false
