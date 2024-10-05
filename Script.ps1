@@ -36,6 +36,7 @@ Set-SmbServerConfiguration –EnableSMB1Protocol $false
 Start-BitsTransfer -Source "https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U_STIG_GPO_Package_April_2024.zip" -Destination "C:\"
 Start-BitsTransfer -Source "https://download.sysinternals.com/files/SysinternalsSuite.zip" -Destination "C:\"
 Start-BitsTransfer -Source "https://www.voidtools.com/Everything-1.4.1.1026.x64-Setup.exe" -Destination "C:\"
+Start-BitsTransfer -Source "http://download.comodo.com/cce/download/setups/cce_x64.zip" -Destination "C:\"
 Start-Process "msedge" "https://www.malwarebytes.com/mwb-download/thankyou"
 Start-Process "msedge" "https://www.microsoft.com/en-us/download/details.aspx?id=55319#:~:text=This%20set%20of%20tools%20allows%20enterprise%20security%20administrators%20to%20download,&msockid=2de510ea7e636380238505ed7f31622e"
 
